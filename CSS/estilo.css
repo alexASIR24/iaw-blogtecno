@@ -1,0 +1,90 @@
+/*Alejandro del Barco Casas día 3 enero 2025*/
+
+/* en primer lugar empezaremos con el estilo del html*/
+
+html
+{
+    background-image: url(../static/imagenes/fondo.jpg); 
+    color: white;
+    font-family: 'consolas';
+}
+
+/*en el primer titulo hacemos el tamaño de fuente mas grande*/
+
+h1
+{
+    font-size: 50px;
+}
+
+
+/*ahora hay que subrayar lo que hay dentro del nav*/
+
+nav
+{
+    text-decoration: underline;
+}
+
+/*continuaré con los títulos (centrado, espaciado y centrado)*/
+
+h2 
+{
+    text-shadow: 2px 2px 2px black;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 12px;
+}
+
+/*seguimos con las imagenes poniendoles marco, borde y quitandoselo al del logo que se encunetra en el h1*/
+
+img
+{
+    border: 12px solid white;
+    margin: 6px;  
+}
+
+h1 img
+{
+    border: none;
+}
+
+
+/*ahora continuamos con los formularios poniendole color, fondo blanco, borde y relleno*/
+
+form
+{
+    color: black;
+    background-color: white;
+    border: 4px solid black;    
+    padding: 10px;
+}
+
+/*Cambiaremos ahora el titulo de cada formulario agrandando su fuente y poniendole forma en 3D */
+
+legend
+{
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/*ahora el botón de enviar le pondremos verde y dentro del formulario*/
+
+button
+{
+    background-color:green;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+
+/*ahora pasamos al footer donde le pondremos fondo blanco, color de la fuente negro, centrado, relleno, borde*/
+
+footer
+{   
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 4px solid black;
+}

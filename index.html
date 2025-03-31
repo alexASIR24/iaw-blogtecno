@@ -1,0 +1,95 @@
+<!--ALEJANDRO DEL BARCO. Fecha: 26 diciembre 2024-->
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Trabajo navidades</title>
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+    </head>
+
+    <body>
+        <header> <!--El header contendrá el título, el logo y unordered list dentro de un nav-->
+            <h1><img src="static/imagenes/logoBlanco.png" alt="logoBlanco"> BLOGTECNO</h1>
+            <nav>
+                <ul>
+                    <li>Tendencias</li>
+                    <li>Formulario</li>
+                    <li>Más info</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main> <!--Dentro del main tendremos dos secciones, la primera con las fotos dentro del un article y la segunda sección con dos formularios dentro de un article-->
+            <section> <!--Esta primera sección tendrá un article con las fotos de las cuatro tendencias-->
+                <h2>TENDENCIAS DEL SIGLO XXI</h2>
+                <article>
+                    <img src ="static/imagenes/tendencia1.jpg" alt="tendencia1" width="250px" height="250px">
+                    <img src ="static/imagenes/tendencia2.jpg" alt="tendencia2" width="250px" height="250px">
+                    <img src ="static/imagenes/tendencia3.jpg" alt="tendencia3" width="250px" height="250px">
+                    <img src ="static/imagenes/tendencia4.jpg" alt="tendencia4" width="250px" height="250px">
+                </article>
+            </section>
+            
+            <section> <!--Esta segunda sección tendrá un article los dos formularios a rellenar-->
+                <h2>SUSCRIBETE AL BOLETÍN</h2>
+                <article>
+                        <form action ="servicio.php" method="get">  <!--Abrimos el único formulario donde va a tener dos filset (dos apartados)-->
+                                <fieldset> <!--Este se trata del primer formulario-->
+                                <legend>Información personal</legend>
+            
+                                <label for ="nombre">Escriba tu nombre:</label><br>
+                                <input type = "text" id = "nombre" name = "nombre"><br>
+            
+                                <label for ="nombre">Escriba tus apellidos:</label><br>
+                                <input type = "text" id = "apellidos" name = "apellidos"><br>
+            
+                                <label for ="nombre">DNI:</label><br>
+                                <input type = "text" pattern="[0-9]{8}[A-Za-z]{1}" id="texto" placeholder="Numeros y letra al final"><br>
+                                
+                                <label for ="provincia" id="provincia">Selecciona tu provincia:</label><br>
+                                <select name ="provincia">
+                                    <optgroup label ="Cantabria">
+                                        <option value ="san">Santander</option>
+                                    </optgroup>
+                                    <optgroup label ="Comunidad de Madrid">
+                                        <option value ="mdz" selected>Madrid</option>
+                                    </optgroup>
+                                    <optgroup label ="Euskadi">
+                                        <option value ="eus">Alava</option>
+                                        <option value ="eus">Bizkaia</option>
+                                        <option value ="eus">Guipuzkoa</option>
+                                    </optgroup>
+                                    <optgroup label ="Galicia">
+                                        <option value ="gal">A Coruña</option>
+                                        <option value ="gal">Lugo</option>
+                                        <option value ="gal">Orense</option>
+                                        <option value ="gal">Pontevedra</option>
+                                    </optgroup>
+                                </select>
+                            </fieldset>
+
+
+                            <fieldset> <!--Este se trata del segundo formulario-->
+                                <legend>Interés en la revista</legend>
+            
+                                <label for ="nombre">Subscripción:</label><br>
+                                <input type = "radio" id = "mensual" name = "Subscripción" value = "mensual">
+                                <label for = "mensual">Mensual</label>
+                                <input type = "radio" id = "anual" name = "Subscripción" value = "anual">
+                                <label for = "anual">Anual</label><br><br>
+            
+                                <label for ="nombre">¿Dónde nos conociste?</label><br>
+                                <textarea rows="8" cols="35" name="texto"></textarea>
+                            </fieldset><br>
+                            <button>Enviar</button> <!--El botón para enviar el formulario-->
+                        </form>
+                </article>
+            </section>
+        </main>
+        <br>
+        <footer>
+            <p>Práctica BLOGTECNO: Diseñar una página Web y practicar con los estilos y propiedades del CSS. Volver a <span class="subrayado">INICIO</span></p>
+        </footer>
+    </body>
+</html>
